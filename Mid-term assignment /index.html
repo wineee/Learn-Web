@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="site.css" rel="stylesheet">
+    <script src="site.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">新冠肺炎疫情资讯</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">主页<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="topic1.html">新闻</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="topic2.html">关于</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="showcase">
+            <div class="container">
+                <h1 style="color: whitesmoke;"> <b></b>新冠肺炎疫情防控</h1>
+            </div>
+        </section>
+
+        <section id="infocard">
+            <h2>河北省疫情数据</h2>
+            <p><small style="color: gray;">数据更新至 2020.12.07 01:26</small></p>
+            <div class="d-flex flex-row justify-content-around mb-3" style="color: lightyellow;">
+                <div class="card">
+                    <div id="header_danger"><h1>0</h1></div>
+                    <div class="container">
+                      <p>现有确诊</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="header_warning"><h1>0</h1></div>
+                    <div class="container">
+                      <p>累计确诊</p>
+                    </div>
+                </div>
+                
+
+                <div class="card">
+                    <div id="header_success"><h1>0</h1></div>
+                    <div class="container">
+                      <p>累计治愈</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div id="header_dark"><h1>0</h1></div>
+                    <div class="container">
+                      <p>累计死亡</p>
+                    </div>
+                </div>
+            </div>
+            <script>
+                updataCnt();
+            </script>
+        </section>
+
+        <section id="main">
+            <h1>河北新冠疫情情况</h1>
+            <p>　　2020年12月6日0&mdash;24时，河北省无新增报告新型冠状病毒肺炎确诊病例，无新增死亡病例，无新增疑似病例，无新增无症状感染者，治愈出院1例(境外输入)。</p>
+            <p>　　截至12月6日24时，河北省现有确诊病例0例，累计治愈出院病例367例(含境外输入34例)，累计死亡病例6例，累计报告本地确诊病例339例、境外输入病例34例。尚在医学观察无症状感染者3例(境外输入)。</p>
+            <p style="text-align: right">河北省卫生健康委员会</p>
+            <p style="text-align: right">2020年12月7日</p>
+        </section>
+    
+        <aside id="sidebar">
+            <div>
+                <div>
+                    <h5>便民服务</h5>
+                    <ul>
+                            <li style="background-color: paleturquoise;"><a href="http://www.gov.cn/zhengce/qiyefugongfuchanzczlc/index.htm" target="_blank" >复工复产支持政策一键查！</a></li>
+                            <li style="background-color: palegreen;"><a href="http://bmfw.www.gov.cn/xxgzbdfyyqfkzsk/index.html" target="_blank"  >新型冠状病毒肺炎疫情防控知识库</a></li>
+                            <li style="background-color: paleturquoise;"><a href="http://bmfw.www.gov.cn/ggjtmqjczcx/index.html" target="_blank"  >新冠肺炎患者同乘接触者查询</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5>热门问答</h5>
+                    <div>
+                            <a href="http://www.gov.cn/xinwen/2020-10/15/content_5551578.htm" target="_blank"  >秋冬季疫情风险是否加大？个人如何做好防护?<br></a>
+                            <a href="http://www.gov.cn/xinwen/2020-09/06/content_5541066.htm" target="_blank"  >后疫情时代，国际教育服务如何危中寻机？<br></a>
+                            <a href="http://www.gov.cn/xinwen/2020-08/19/content_5535904.htm" target="_blank"  >秋冬季新冠肺炎疫情会不会卷土重来？疾控专家回应了<br></a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </aside>
+    </div>
+    
+    <footer id="main-footer">
+        <p>Copyright &copy 2020; REWINE</p>
+        <p>
+            联系我们：
+            <a href="mailto:1758075541@qq.com" target="_top">
+            发送邮件</a>
+        </p>
+        <p id="Time"></p>
+        <script>
+            displayDate();
+            setInterval(displayDate,1000);
+        </script>
+    </footer>
+</body>
+</html>

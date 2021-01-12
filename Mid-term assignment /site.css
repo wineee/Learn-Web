@@ -1,0 +1,116 @@
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#showcase{
+    background-image: url('figures/bg.png');
+    background-position: center;
+    min-height: 300px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding:0 30px;
+    box-sizing: border-box;
+}
+
+#infocard{
+    margin-bottom: 30px;
+}
+
+#infocard div.card {
+    width: 170px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+ 
+#infocard div#header_danger {
+      background-color: red;
+      color: white;
+      padding: 10px;
+      font-size: 40px;
+}
+
+#infocard div#header_warning {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+#infocard div#header_success {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+#infocard div#header_dark {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+  
+#infocard div.container {
+    color: black;
+    padding: 10px;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+    border: blue 1px solid;
+}
+
+#sidebar li{
+    list-style: circle;
+    border: lightgoldenrodyellow solid;
+    margin: auto;
+}
+#sidebar a:link {color:#000000;}      /* 未访问链接*/
+#sidebar a:visited {color:gray;}  /* 已访问链接 */
+#sidebar a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+#sidebar a:active {color:#0000FF;}  /* 鼠标点击时 */
+
+#main-footer{
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+#center-page{
+    text-align: center;
+    font-family: "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei";
+}
+
+@media(max-width:800px){
+    #main{
+      width: 100%;
+      float: none;
+    }
+  
+    #sidebar{
+      width: 100%;
+      float: none;
+    }
+}

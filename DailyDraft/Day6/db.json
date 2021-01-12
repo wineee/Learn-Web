@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "email": "sdsd@gmail.com",
+      "age": 24,
+      "companyId": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "DDohn",
+      "email": "sdsdd@gmail.com",
+      "age": 22,
+      "companyId": "1"
+    },
+    {
+      "firstName": "g45h4",
+      "email": "dwerw@qq.com",
+      "age": 2424,
+      "companyId": "1",
+      "id": "G5v24Ud"
+    },
+    {
+      "firstName": "ssss",
+      "email": "ddwerw@qq.com",
+      "age": 244,
+      "companyId": "2",
+      "id": "QESOz6j"
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "description": "grer  wdfwqg"
+    }
+  ]
+}

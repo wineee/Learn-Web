@@ -1,0 +1,114 @@
+<!--
+    课后练习：
+PART 1  基础练习部分
+1、网页中加入javascript程序的三种方式。
+      参考：https://www.runoob.com/js/js-howto.html
+2、通过DOM改变 HTML 样式。
+      参考：https://www.runoob.com/js/js-htmldom-css.html
+3、通过DOM改变HTML 内容。
+      参考：https://www.runoob.com/js/js-htmldom-html.html
+4、Javascript中的“结构体”：Javascript对象的使用。
+      参考：https://www.runoob.com/js/js-obj-intro.html
+5、Javascirpt中的“带嵌套的结构体”：json对象的使用。
+      参考：https://www.runoob.com/js/js-obj-intro.html
+6、简单浏览runoob手册，看看Javascirpt中都包含哪些几类对象，每类对象包含哪些具体对象。
+      参考：https://www.runoob.com/jsref/jsref-tutorial.html
+
+PART 2  高级练习部分
+7、通过HTML的事件属性为标签静态绑定事件响应函数。
+      参考：https://www.runoob.com/js/js-events.html
+8、通过DOM的事件属性，为DOM结点动态绑定事件响应函数。
+      参考：https://www.runoob.com/js/js-htmldom-events.html    
+                 https://www.runoob.com/js/js-htmldom-eventlistener.html
+9、练习javascript里面中括弧"[]"字面量对象（ Javascript数组 ）、大括弧“{}”字面量对象（Javascript 对象）、和混括弧字面量对象（Json 对象）。
+      参考： https://www.runoob.com/js/js-obj-array.html
+                  https://www.runoob.com/js/js-obj-intro.html
+                  https://www.runoob.com/js/js-json.html
+10、比较 《HTML参考手册》和《HTML 对象参考手册》异同。
+    （1）《HTML参考手册》以HTML标签为索引
+       参考：https://www.runoob.com/tags/html-reference.html
+    （2）《HTML对象参考手册》以HTML标签所对应的DOM结点对象为索引
+      参考：https://www.runoob.com/jsref/dom-obj-document.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1.hidden {visibility: hidden;}
+        h2.hidden {display: none;}
+        li {display: inline;}
+        span.bk 
+        {
+            display: block;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            document.getElementById("mydemo").innerHTML = "hello js";
+        }
+    </script>
+</head>
+<body>
+    <h1>This is a Visable Title</h1>
+    <h1 class="hidden">This is a Hidden Title</h1>
+    <p> This is a p lable </p>
+    <h2 class="hidden">This is not Display</h2>
+    <h2>This is a h2 lable</h2>
+    <ul>
+        <li><a>AAAA</a></li>
+        <li><a>BBBB</a></li>
+        <li><a>CCCC</a></li>
+    </ul>
+    <h2>Nirvana</h2>
+    <span class="bk">Record: MTV Unplugged in New York</span>
+    <span class="bk">Year: 1999</span>
+
+    <p>Next is JavaScript</p>
+    <script>
+        document.write("<h1>This is a Title from js</h1>")
+        document.write("<p> This is a p lable from js</p>")
+    </script>
+    <p id = "mydemo">one prg</p>
+    <button type = "button" onclick="myFunction()"> Tip here</button>
+
+    <p id = "p1">Hellow World!</p>
+    <p id = "p2"> <h1>Hellow World!</h1></p>
+    <script>
+        document.getElementById("p1").style.color = "blue";
+        document.getElementById("p1").style.fontSize = "larger";
+        var p_p2 = document.getElementById("p2");
+        p_p2.style.color = "red";
+        p_p2.innerText = "Hi Text"
+    </script>
+    <script>
+        document.write(Date())
+    </script>
+
+    <p>Creat JavaScript Object</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <script>
+        var person = {
+            firstName : "John",
+            lastName  : "Doe",
+            age       : 50,
+            eyeColor  : "blue",
+            fullName : function() 
+            {
+                return this.firstName + " " + this.lastName
+            }
+        };
+        let mydemo1 = document.getElementById("demo1");
+        mydemo1.innerHTML = person.firstName
+             + " Now is " + person["age"] + " years old";
+        document.getElementById("demo2").innerHTML = person.fullName;
+        document.getElementById("demo3").innerHTML = person.fullName()
+    </script>
+
+</body>
+    
+</html>
