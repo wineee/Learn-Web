@@ -3,39 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>update</title>
-    <script src="main.js"></script>
+    <title>修改数据</title>
+    
     <link rel="stylesheet" href="site.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="update.js"></script>
 </head>
 <body>
-    <a href="index.html">返回主页</a>
-    <div id="container">
-        <label for="tips">请先输入学号方便我们为你查询相关信息并显示在上面</label>
-        <div id="editor1">
-            <label for="nameup">姓名</label>
-            <input type="text" name="nameup" id="nameup" />
-        </div>
-        <div id="editor2">
-            <label for="numup">学号</label>
-            <input type="text" name="numup" id="numup" />
-        </div>
-        <div id="editor3">
-            <label for="ageup">年龄</label>
-            <input type="text" name="ageup" id="ageup" />
-        </div>
-        <div id="editor5">
-            <label for="occupation">职业</label>
-            <input type="text" name="occupationup" id="occupationup" />
-        </div>
-        <div id="editor4">
-            <label for="genderup">性别</label>
-            <input name="rdup" type="radio" value="男" id="1"/>男
-            &emsp;&emsp;&emsp;&emsp;&emsp13;&emsp;&emsp13;
-            <input name="rdup" type="radio" value="女" id="2"/>女
-        </div>
-        <button id="upquery" onclick="upquery()">查询数据</button>
-        <button id="update" onclick="update()">修改数据</button>
+      <!--学号 姓名 性别 年龄 手机号-->
+      <div class="container">
+        <h2>修改学生信息</h2>
+        <p>请输入正确的学号完成修改</p>
+        <form>
+            <div class="form-group">
+                <label for="id">学号:</label>
+                <input type="number" class="form-control" id="updateId" placeholder="输入学号">
+            </div>
+            <div class="form-group">
+                <label for="name">姓名:</label>
+                <input type="name" class="form-control" id="updatename" placeholder="输入姓名">
+            </div>
+            <div class="form-group">
+                <label for="gender">性别:</label>
+                <div class="radio">
+                    <label><input type="radio" id="genderMale" name='updatege' value="male">男&emsp;&emsp;&emsp;&emsp;</label>
+                    <label><input type="radio" id="genderFemale" name='updatege' value="famale">女</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="age">年龄:</label>
+                <input type="number" class="form-control" id="updateage" placeholder="输入年龄">
+            </div>
+            <div class="form-group">
+                <label for="TelNum">手机号:</label>
+                <input type="number" class="form-control" id="updateTelNum" placeholder="输入手机号">
+            </div>
+            <button type="button" class="btn btn-success" onclick="getbyId()">获取</button>
+            <button type="submit" class="btn btn-primary" onclick="update()">更新</button>
+            <button class="btn btn-warning"> <a href="index.html">返回主页</a> </button>
+        </form>
     </div>
 </body>
 </html>

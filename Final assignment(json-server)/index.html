@@ -3,22 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>导航</title>
+    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div id="container" style="background-color: darkgrey;">
-        <div class="content">
+  <div class="jumbotron text-center">
+    <h1>学生信息管理系统导航页</h1>
+    <p>点击相应链接选择功能!</p> 
+  </div>
+   
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <h3>
             <a href="add.html">增加数据</a>
-        </div>
-        <div class="content">
+        </h3>
+        <p>在这里添加学生信息</p>
+      </div>
+      <div class="col-sm-3">
+        <h3>
             <a href="delete.html">删除数据</a>
-        </div>
-        <div class="content">
+        </h3>
+        <p>在这里删除特定的学生信息</p>
+      </div>
+      <div class="col-sm-3">
+        <h3> 
             <a href="update.html">修改数据</a>
-        </div>
-        <div class="content">
+        </h3>
+        <p>在这里可以修改学生数据</p>
+      </div>
+      <div class="col-sm-3">
+        <h3> 
             <a href="query.html">查询数据</a>
-        </div>
+        </h3>
+        <p>点击查询学生信息</p>
+      </div>
     </div>
+  </div>
 </body>
 </html>

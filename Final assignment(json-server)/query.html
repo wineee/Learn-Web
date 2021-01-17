@@ -3,45 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>query</title>
-    <script src="main.js"></script>
-    <script src="query.js"></script>
+    <title>查询数据</title>
+    
     <link rel="stylesheet" href="site.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="query.js"></script>
 </head>
 <body>
-    <a href="index.html">返回主页</a>
-    <div id="container">
-        <div>
-            <label for="queryname">按姓名查询</label>
-            <input type="text" id="queryname">
-            <button id="namequery" onclick="queryname()">查询</button>
-        </div>
-        <div>
-            <label for="queryid">按学号查询</label>
-            <input type="text" id="queryid">
-            <button id="idquery" onclick="queryid()">查询</button>
-        </div>
-        <div>
-            <label for="queryage">按年龄查询</label>
-            <input type="text" id="queryage">
-            <button id="agequery" onclick="queryage()">查询</button>
-        </div>
-        <div>
-            <label for="querygender">按性别查询</label>
-            <input type="text" id="querygender">
-            <button id="genderquery" onclick="querygender()">查询</button>
-        </div>
-        <div>
-            <label for="queryoccu">按职业查询</label>
-            <input type="text" id="queryoccupation">
-            <button id="occuquery" onclick="queryoccu()">查询</button>
-        </div>
-        <div>
-            <table id="box3" class="tab3">
-                
-            </table>
-        </div>
+    <div class="container">
+        <h2>查询学生信息</h2>
+        <p>输入限制信息后，点击查询按钮，注意：性别用male/female表示</p>
+        <form class="form-inline">
+            <label for="id">按学号查询:</label>
+            <input type="number" class="form-control" id="queryId" placeholder="Enter id">
+            <button type="button" class="btn btn-primary" onclick="queryById()">查询</button>
+        </form>
+
+        <form class="form-inline">
+            <label for="id">按姓名查询:</label>
+            <input type="name" class="form-control" id="queryName" placeholder="Enter name">
+            <button type="button" class="btn btn-primary" onclick="queryByName()">查询</button>
+        </form>
+
+        <form class="form-inline">
+            <label for="id">按性别查询:</label>
+            <input class="form-control" id="queryGender" placeholder="Enter gender">
+            <button type="button" class="btn btn-primary" onclick="queryByGender()">查询</button>
+        </form>
+
+        <form class="form-inline">
+            <label for="id">按年龄查询:</label>
+            <input type="number" class="form-control" id="queryAge" placeholder="Enter age">
+            <button type="button" class="btn btn-primary" onclick="queryByAge()">查询</button>
+        </form>
+
+        <form class="form-inline">
+            <label for="id">按手机查询:</label>
+            <input type="number" class="form-control" id="queryTelNum" placeholder="Enter Tel Num">
+            <button type="button" class="btn btn-primary" onclick="queryByTelNum()">查询</button>
+        </form>
+        
+        <!--学号 姓名 性别 年龄 手机号-->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>手机号</th>
+                </tr>
+            </thead>
+            <tbody id = "query_tr">
+               
+            </tbody>
+        </table>
+
+        <br>
+        <button class="btn btn-warning"> <a href="index.html">返回主页</a> </button>
     </div>
 </body>
 </html>

@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a:link {color:blue;}      /* 未访问链接*/
+a:visited {color:blueviolet;}      /* 已访问链接 */
+a:hover {color:red;}     /* 鼠标移动到链接上 */
+a:active {color:black;}    /* 鼠标点击时 */

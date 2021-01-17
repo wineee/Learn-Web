@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>delete</title>
-    <script src="main.js"></script>
+    <title>删除数据</title>
+
     <link rel="stylesheet" href="site.css">
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="delete.js"></script>
 </head>
+
 <body>
-    <a href="index.html">返回主页</a>
-    <br><br><br>
-    <div id="container">
-        <script>
-            getinfo("box2");   //显示信息
-        </script>
-        <label for="id">请输入要删除数据的学号</label>
-        <input type="text" name="deleteforid" id="content"/>
-        <button id="delete" onclick="Delete()">删除</button>
-        <div style="margin-left: 500px;">
-            <table id="box2" class="tab1">
-                <tr id="tr2">
-                    <td>姓名</td>
-                    <td>学号</td>
-                    <td>年龄</td>
-                    <td>性别</td>
-                    <td>职业</td>
+
+    <div class="container">
+        <h2>删除学生信息</h2>
+        <p>输入删除数据的学号后，点击Submit按钮，如果成功，下表短暂显示删除的数据</p>
+        <form class="form-inline">
+            <label for="id">请输入要删除信息的学号:</label>
+            <input type="number" class="form-control" id="deleteId" placeholder="Enter id">
+            <button type="button" class="btn btn-primary" onclick="Delete()">Submit</button>
+        </form>
+        
+        <!--学号 姓名 性别 年龄 手机号-->
+        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>年龄</th>
+                    <th>手机号</th>
                 </tr>
-            </table>
-        </div>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id = "idTd"></td>
+                    <td id = "nameTd"></td>
+                    <td id = "genderTd"></td>
+                    <td id = "ageTd"></td>
+                    <td id = "TelNumTd"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <button class="btn btn-warning"> <a href="index.html">返回主页</a> </button>
     </div>
+
 </body>
+
 </html>
