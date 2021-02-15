@@ -94,56 +94,56 @@ npm run json:server
 
 浏览器打开  http://localhost:3000 显示home页
 
-![image-20210116151844697](基于 json-server 的Restful API服务器.assets/image-20210116151844697.png)
+![image-20210116151844697](基于json-server的RestfulAPI服务器.assets/image-20210116151844697.png)
 
 
 
 浏览器打开  http://localhost:3000/student 显示所有学生数据
 
-![image-20210116152057559](基于 json-server 的Restful API服务器.assets/image-20210116152057559.png)
+![image-20210116152057559](基于json-server的RestfulAPI服务器.assets/image-20210116152057559.png)
 
 浏览器打开  http://localhost:3000/id 显示单个学生数据，如id=1时
 
-![image-20210116152322973](基于 json-server 的Restful API服务器.assets/image-20210116152322973.png)
+![image-20210116152322973](基于json-server的RestfulAPI服务器.assets/image-20210116152322973.png)
 
 浏览器打开  http://localhost:3000/?age=25  显示年龄为25的学生的数据
 
-![image-20210116152523718](基于 json-server 的Restful API服务器.assets/image-20210116152523718.png)
+![image-20210116152523718](基于json-server的RestfulAPI服务器.assets/image-20210116152523718.png)
 
 浏览器打开 http://localhost:3000/student/?age_gte=23&age_lte=25， age_gte,age_lte分别限制年龄最小最大值，进行范围查询
 
-![image-20210116153053438](基于 json-server 的Restful API服务器.assets/image-20210116153053438.png)
+![image-20210116153053438](基于json-server的RestfulAPI服务器.assets/image-20210116153053438.png)
 
 浏览器打开 http://localhost:3000/student?q=Li，q后跟的字符串"Li"，可以查询包含"Li"的学生信息
 
-![image-20210116153225411](基于 json-server 的Restful API服务器.assets/image-20210116153225411.png)
+![image-20210116153225411](基于json-server的RestfulAPI服务器.assets/image-20210116153225411.png)
 
 ### 前端界面展示
 
 #### 导航页
 
-![image-20210116153625391](基于 json-server 的Restful API服务器.assets/image-20210116153625391.png)
+![image-20210116153625391](基于json-server的RestfulAPI服务器.assets/image-20210116153625391.png)
 
 #### 增加数据
 
-![image-20210116153728485](基于 json-server 的Restful API服务器.assets/image-20210116153728485.png)
+![image-20210116153728485](基于json-server的RestfulAPI服务器.assets/image-20210116153728485.png)
 
 #### 删除数据
 
-![image-20210116153815095](基于 json-server 的Restful API服务器.assets/image-20210116153815095.png)
+![image-20210116153815095](基于json-server的RestfulAPI服务器.assets/image-20210116153815095.png)
 
 #### 修改数据
 
 输入学号后，先点击获取按钮
 
-![image-20210116153857468](基于 json-server 的Restful API服务器.assets/image-20210116153857468.png)
+![image-20210116153857468](基于json-server的RestfulAPI服务器.assets/image-20210116153857468.png)
 
 修改数据后，再点击更新按钮提交
 
-![image-20210116153940868](基于 json-server 的Restful API服务器.assets/image-20210116153940868.png)
+![image-20210116153940868](基于json-server的RestfulAPI服务器.assets/image-20210116153940868.png)
 
 #### 查询数据
 
-![image-20210116154231984](基于 json-server 的Restful API服务器.assets/image-20210116154231984.png)
+![image-20210116154231984](基于json-server的RestfulAPI服务器.assets/image-20210116154231984.png)
 
-![image-20210116154308092](基于 json-server 的Restful API服务器.assets/image-20210116154308092.png)
+![image-20210116154308092](基于json-server的RestfulAPI服务器.assets/image-20210116154308092.png)
