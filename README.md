@@ -14,20 +14,20 @@ https://www.w3cschool.cn/
 
 3、VS Code插件安装：
 
-> Auto Tag Name
-> Bracket Pair Colorizer 2
-> Chinese Language Pack for Visual Studio Code
-> HTML CSS Support
-> ESLint
-> IntelliSence for CSS class name in HTML
-> JavaScript(ES6) code Snippets
-> Live Server
-> npm
-> npm IntelliSence
-> Path Intellisence
-> Rest Client
-> vscode-icons
-> YAML
+- Auto Tag Name
+- Bracket Pair Colorizer 2
+- Chinese Language Pack for Visual Studio Code
+- HTML CSS Support
+- ESLint
+- IntelliSence for CSS class name in HTML
+- JavaScript(ES6) code Snippets
+- Live Server
+- npm
+- npm IntelliSence
+- Path Intellisence
+- Rest Client
+- vscode-icons
+- YAML
 
 补充Bootstrap可视化布局工具的官方网址：https://www.bootcss.com/p/layoutit/
 
@@ -35,22 +35,21 @@ https://www.w3cschool.cn/
 
 1、题目：设计一个小型主页网站
 2、内容包括：
-（1）网站的主题为同学们所在省份的疫情防控情况介绍。
-（2）网站包含3个网页，包含1个一级主页和2个二级主页。
-（3）网站采用原生HTML+CSS或者Bootstrap进行布局。利用盒子模型将主页粗略地分为：标题栏、导航栏、内容区、页脚区。
-（4）网页元素包括：文字、列表、表格、图片、超链接、邮件链接、背景音乐、表单等。
-（5）利用CSS、Bootstrap样式文件对以上网页元素进行美化。
-（6）利用Javascript代码文件，在网页中增加适当的动态交互内容，要求使用DOM和BOM模型。
+  - 网站的主题为同学们所在省份的疫情防控情况介绍。
+  - 网站包含3个网页，包含1个一级主页和2个二级主页。
+  - 网站采用原生HTML+CSS或者Bootstrap进行布局。利用盒子模型将主页粗略地分为：标题栏、导航栏、内容区、页脚区。
+  - 网页元素包括：文字、列表、表格、图片、超链接、邮件链接、背景音乐、表单等。
+  - 利用CSS、Bootstrap样式文件对以上网页元素进行美化。
+  - 利用Javascript代码文件，在网页中增加适当的动态交互内容，要求使用DOM和BOM模型。
 3、内容要求：
-（1）网站的所有内容放在一个文件夹里面，下面放：一级主页名为index.html，二级主页topic1.html、topic2.html，网站样式文件site.css，网站javascript文件site.js，和用于放图片和音乐的figures文件夹，压缩后大小不超过1M。
-（2）链接或者图片的定位使用相对定位，确保整体拷贝其他计算机也依然能够正常打开。
-（3）网页HTML代码要保持干净整洁，不允许存在无功能的冗余代码。
-（4）网页内容要真实、网站风格简洁朴素、协调。
-（5）所有代码，必须自己完成，可以借鉴网上的例子，但是禁止抄袭。一经发现，期中成绩计零分。
+  - 网站的所有内容放在一个文件夹里面，下面放：一级主页名为index.html，二级主页topic1.html、topic2.html，网站样式文件site.css，网站javascript文件site.js，和用于放图片和音乐的figures文件夹，压缩后大小不超过1M。
+  - 链接或者图片的定位使用相对定位，确保整体拷贝其他计算机也依然能够正常打开。
+  - 网页HTML代码要保持干净整洁，不允许存在无功能的冗余代码。
+  - 网页内容要真实、网站风格简洁朴素、协调。
+  - 所有代码，必须自己完成，可以借鉴网上的例子，但是禁止抄袭。一经发现，期中成绩计零分。
 
 
-
-**代码见Mid-term assignment目录，界面展示如下: **
+** 代码见Mid-term assignment目录，界面展示如下: **
 
 ![2021-02-16 00.26.16 127.0.0.1 bac09fab0516](README.assets/2021-02-16 00.26.16 127.0.0.1 bac09fab0516.png)
 
