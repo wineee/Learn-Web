@@ -31,6 +31,9 @@ https://www.w3cschool.cn/
 
 补充Bootstrap可视化布局工具的官方网址：https://www.bootcss.com/p/layoutit/
 
+- [一些视频资料(转载至b站)](https://space.bilibili.com/23192485/favlist?fid=1180931185)
+- [youtube链接(视频作者)](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
+
 ### 期中作业
 
 1、题目：设计一个小型主页网站
@@ -68,7 +71,6 @@ https://www.w3cschool.cn/
 - 除了提交前端应用代码之外,还需一并提交关于如何搭建和启动 json-server ,和所开发的数据访问接口的说明文档。
 
 
-
 基于  Flask + Marshmellow +  Sqlalchemy构建一个后端服务程序,提供对数据库访问的Restful API服务接口,该接口需要提供针对后端数据库的增删改查功能。
 
 - 程序所提供的后端服务Restful API可以无需进行用户验证;
@@ -77,5 +79,4 @@ https://www.w3cschool.cn/
 - 除了提交后端服务程序代码之外,还需提供数据服务接口的测试方法(比如:
   Postman)以及测试结果的说明文档;如果采用基于Python的后端和方案,则需同时提交用于pip重构程序运行环境的 ~~requirements~~ (使用pipfile)文件。
 
-
-
+[**具体文档请点击**](https://github.com/wineee/Learn-Web/tree/main/Doc)
