@@ -12,25 +12,6 @@ https://www.bilibili.com/video/av80610946
 https://www.runoob.com/
 https://www.w3cschool.cn/
 
-3、VS Code插件安装：
-
-- Auto Tag Name
-- Bracket Pair Colorizer 2
-- Chinese Language Pack for Visual Studio Code
-- HTML CSS Support
-- ESLint
-- IntelliSence for CSS class name in HTML
-- JavaScript(ES6) code Snippets
-- Live Server
-- npm
-- npm IntelliSence
-- Path Intellisence
-- Rest Client
-- vscode-icons
-- YAML
-
-补充Bootstrap可视化布局工具的官方网址：https://www.bootcss.com/p/layoutit/
-
 - [一些视频资料(转载至b站)](https://space.bilibili.com/23192485/favlist?fid=1180931185)
 - [youtube链接(视频作者)](https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA)
 
@@ -70,6 +51,7 @@ https://www.w3cschool.cn/
 - 前端所使用的Ajax调用技术至少包括 fetch() 、 jquery.ajax() 和 Axios 这3种技术中的2种()。(本次add,delete使用 jquery.ajax()实现 , 而query,update使用Axios实现)
 - 除了提交前端应用代码之外,还需一并提交关于如何搭建和启动 json-server ,和所开发的数据访问接口的说明文档。
 
+[**具体文档请点击**](https://github.com/wineee/Learn-Web/blob/main/Doc/%E5%9F%BA%E4%BA%8E%20json-server%20%E7%9A%84Restful%20API%E6%9C%8D%E5%8A%A1%E5%99%A8.md)
 
 基于  Flask + Marshmellow +  Sqlalchemy构建一个后端服务程序,提供对数据库访问的Restful API服务接口,该接口需要提供针对后端数据库的增删改查功能。
 
@@ -79,4 +61,4 @@ https://www.w3cschool.cn/
 - 除了提交后端服务程序代码之外,还需提供数据服务接口的测试方法(比如:
   Postman)以及测试结果的说明文档;如果采用基于Python的后端和方案,则需同时提交用于pip重构程序运行环境的 ~~requirements~~ (使用pipfile)文件。
 
-[**具体文档请点击**](https://github.com/wineee/Learn-Web/tree/main/Doc)
+[**具体文档请点击**](https://github.com/wineee/Learn-Web/blob/main/Doc/%E5%9F%BA%E4%BA%8EFlask%E7%9A%84%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1%E7%A8%8B%E5%BA%8F%E6%B5%8B%E8%AF%95%E7%BB%93%E6%9E%9C.md)
